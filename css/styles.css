@@ -30,6 +30,28 @@
   background-color: var(--main-background-color);
 }
 
+/* Глобальне скидання стилів для тегів */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+/* Ховаємо тег, який не має показуватись в браузері */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -43,11 +65,38 @@
   margin: -1px;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid red;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* 
 ===============
 Header
 ===============
  */
+.navigation .list {
+  display: flex;
+  align-items: center;
+}
+
+.container .navigation {
+  display: flex;
+  align-items: center;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   text-decoration: none;
@@ -57,6 +106,11 @@ Header
   line-height: 1.19;
 
   color: var(--accent-color);
+}
+.navigation .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .logo-black-color {
@@ -71,7 +125,18 @@ Header
   list-style: none;
 }
 
+.navigation-item {
+  margin-right: 50px;
+}
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
 .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -84,20 +149,34 @@ Header
 .active-text-color,
 .navigation-link:hover,
 .navigation-link:focus,
-.navigation-contact:hover,
-.navigation-contact:focus,
+.header-contact:hover,
+.header-contact:focus,
 .footer-address:hover,
 .footer-address:focus,
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
 }
+.header-list {
+  margin-left: auto;
 
-.navigation-contact {
+  display: flex;
+  align-items: center;
+}
+.header-items {
+  margin-right: 50px;
+}
+.header-items:last-child {
+  margin-right: 0;
+}
+.header-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   text-decoration: none;
 
   color: var(--main-text-color);
@@ -114,6 +193,12 @@ section hero
 }
 
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 696px;
+
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -133,7 +218,10 @@ section hero
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   border: none;
+  padding: 10px 32px;
   border-radius: 4px;
+
+  margin-bottom: 200px;
 }
 
 .hero-button:hover,
@@ -146,6 +234,15 @@ section hero
 section quality
 ==================
  */
+
+.quality {
+  padding-top: 94px;
+}
+ 
+.quality .list {
+  display: flex;
+}
+
 .second-title,
 .hobbies-title,
 .team-title {
@@ -155,6 +252,19 @@ section quality
   text-align: center;
 
   color: var(--title-color);
+}
+
+.quality-item {
+  margin-right: 30px;
+  width: 270px;
+}
+
+.quality-item:last-child {
+  margin-right: 0;
+}
+
+.quality .third-title {
+  padding-bottom: 10px;
 }
 
 .third-title {
@@ -167,6 +277,7 @@ section quality
 }
 
 .quality-text {
+  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -176,6 +287,25 @@ section hobbies
 ==================
  */
 
+.hobbies{
+  background-color: #2196f3;
+}
+
+
+.hobbies .list{
+  display: flex;
+}
+.hobbies-title{
+  margin-bottom: 50px;
+}
+
+.hobbies-item{
+  margin-right: 30px;
+}
+
+.hobbies-item:last-child {
+  margin-right: 0;
+}
 /*
 ==================
 section team
@@ -184,8 +314,19 @@ section team
 .team {
   background-color: var(--secondary-background-color);
 }
+.team .list{
+  display: flex;
+}
+.team-title{
+  margin-bottom: 50px;
+}
+.team-img {
+  margin-bottom: 30px;
+}
 
 .team-third-title {
+margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -195,13 +336,20 @@ section team
 }
 
 .team-text {
+margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
 .team-item {
+  margin-right: 30px;
   background-color: var(--main-background-color);
+}
+
+.team-item:last-child {
+  margin-right: 0;
 }
 
 /*
@@ -277,6 +425,22 @@ Footer
   background-color: var(--dark-background-color);
 }
 
+.footer .logo {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-item {
+  padding-bottom: 9px;
+}
+.footer-item:last-child {
+  padding-bottom: 0;
+}
+
+.footer .list {
+  padding-bottom: 60px;
+}
 .footer-address {
   line-height: 1.71;
 
