@@ -234,7 +234,9 @@ section hero
 section features
 ==================
  */
-
+.features .container{
+  outline: 1px dashed orangered;
+}
 
 .features .list {
   display: flex;
