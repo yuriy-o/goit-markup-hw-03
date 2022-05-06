@@ -1,7 +1,6 @@
-/* кастомні властивості або css зміні */
+/*#region root, кастомні властивості або css зміні */
 :root {
   /* fonts */
-
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
 
@@ -20,7 +19,8 @@
   --secondary-background-color: #f5f4fa;
   --header-board-color: #ececec;
 }
-
+/*#endregion*/
+/*#region Властивості body за замовченням */
 .body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -29,8 +29,8 @@
   color: var(--main-text-color);
   background-color: var(--main-background-color);
 }
-
-/* Глобальне скидання стилів для тегів */
+/* #endregion */
+/*#region Глобальне скидання стилів тегів */
 h1,
 h2,
 h3,
@@ -50,8 +50,8 @@ a {
 img {
   display: block;
 }
-
-/* Ховаємо тег, який не має показуватись в браузері */
+/*#endregion*/
+/*#region Ховаємо тег, який не має показуватись в браузері */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -64,7 +64,8 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+/*#endregion*/
+/*#region Властивості .container та .section  */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -77,11 +78,8 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* 
-===============
-Header
-===============
- */
+/*#endregion*/
+/*#region Header */
 .navigation .list {
   display: flex;
   align-items: center;
@@ -95,7 +93,7 @@ Header
   display: flex;
   align-items: center;
 }
-.header{
+.header {
   border-bottom: 1px solid var(--header-board-color);
 }
 
@@ -182,12 +180,8 @@ Header
 
   color: var(--main-text-color);
 }
-
-/*
-==================
-section hero
-==================
- */
+/*#endregion*/
+/*#region section hero */
 .hero {
   background-color: var(--dark-background-color);
   text-align: center;
@@ -228,18 +222,11 @@ section hero
 .hero-button:focus {
   background-color: var(--button-hover-color);
 }
-
-/*
-==================
-section features
-==================
- */
-.features .container{
-  outline: 1px dashed orangered;
-}
-
-.features .list {
+/* #endregion */
+/*#region section features */
+.features.section .list {
   display: flex;
+  align-items: center;
 }
 
 .second-title,
@@ -262,14 +249,14 @@ section features
   margin-right: 0;
 }
 
-.features .third-title {
+.features-third-title {
   margin-bottom: 10px;
 }
 
-.third-title {
+.features-third-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--title-color);
@@ -277,14 +264,10 @@ section features
 
 .features-text {
   font-weight: 400;
-    line-height: 1.71;
+  line-height: 1.71;
 }
-
-/*
-==================
-section hobbies
-==================
- */
+/* #endregion */
+/*#region section hobbies */
 
 .hobbies {
   padding-bottom: 94px;
@@ -304,11 +287,8 @@ section hobbies
 .hobbies-item:last-child {
   margin-right: 0;
 }
-/*
-==================
-section team
-==================
- */
+/* #endregion */
+/*#region section team */
 .team {
   background-color: var(--secondary-background-color);
 }
@@ -353,12 +333,8 @@ section team
 .team-item:last-child {
   margin-right: 0;
 }
-
-/*
-==================
-section portfolio
-==================
- */
+/* #endregion */
+/*#region section portfolio */
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -384,7 +360,6 @@ section portfolio
 }
 
 .portfolio-btn {
-  
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -436,7 +411,7 @@ section portfolio
 }
 
 .portfolio-second-title {
-margin-bottom: 4px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -455,16 +430,12 @@ margin-bottom: 4px;
 }
 .portfolio-item .text {
   padding: 20px 24px;
-      border-left: 1px solid #eee;
-      border-right: 1px solid #eee;
-      border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
-
-/*
-==================
-Footer
-==================
- */
+/* #endregion */
+/*#region Footer */
 
 .footer {
   background-color: var(--dark-background-color);
@@ -501,3 +472,4 @@ Footer
   text-decoration: none;
   font-style: normal;
 }
+/* #endregion */
