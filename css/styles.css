@@ -49,6 +49,8 @@ a {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*#endregion*/
 /*#region Ховаємо тег, який не має показуватись в браузері */
