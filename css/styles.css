@@ -213,7 +213,7 @@ img {
 }
 
 .hero-title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   width: 696px;
@@ -245,11 +245,11 @@ img {
 .hero-button:focus {
   background-color: var(--button-hover-color);
 }
+
 .hero > .container {
-  background-image: url("/images/business.jpg");
-
-
+  background-image: url('/images/business.jpg');
 }
+
 /* #endregion */
 /*#region section features */
 .features.section .list {
@@ -332,8 +332,9 @@ img {
   margin-bottom: 50px;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.team-items {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-third-title {
@@ -348,8 +349,6 @@ img {
 }
 
 .team-text {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -375,11 +374,11 @@ img {
 }
 
 .portfolio-filter {
+  margin-bottom: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  padding-bottom: 50px;
 }
 
 .portfolio-title {
