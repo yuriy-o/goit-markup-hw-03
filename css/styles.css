@@ -371,7 +371,7 @@ img {
   background-color: var(--main-background-color);
 
   box-shadow: var(--card-shadow);
-  border-radius: 4px;
+  border-radius: 4px 4px 4px 4px;
 }
 
 .team-item:last-child {
