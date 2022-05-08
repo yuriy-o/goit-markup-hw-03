@@ -245,7 +245,11 @@ img {
 .hero-button:focus {
   background-color: var(--button-hover-color);
 }
+.hero > .container {
+  background-image: url("/images/business.jpg");
 
+
+}
 /* #endregion */
 /*#region section features */
 .features.section .list {
